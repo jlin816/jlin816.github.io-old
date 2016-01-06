@@ -2,17 +2,30 @@
 layout: default
 title: Photos
 custom_css: photos
+custom_js: masonry.pkgd.min
 ---
     <div class="content">
     <ul class="gallery">
         {% directory path: img %}
+        <div class="gallery-item">
             <li> 
                 <img src="{{ file.url }}" alt=""/>
+                <div class="overlay">
+                    <span> {{ file.name }} </span>
+                </div>
             </li>
+        </div>
         {% enddirectory %}
     </ul>
     </div>
-    
+
+    <script>
+        var container = document.querySelector(".gallery");
+        var msnry = new Masonry( container, {
+            columnWidth: ".gallery-item",
+            itemSelector: ".gallery-item"
+        });
+    </script>
     <footer>
     </footer>
 </body>

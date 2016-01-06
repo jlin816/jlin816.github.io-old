@@ -1,0 +1,19 @@
+---
+layout: default
+title: Photos
+custom_css: photos
+---
+    <div class="content">
+    <ul class="gallery">
+        {% directory path: img %}
+            <li> 
+                <img src="{{ file.url }}" alt=""/>
+            </li>
+        {% enddirectory %}
+    </ul>
+    </div>
+    
+    <footer>
+    </footer>
+</body>
+</html>

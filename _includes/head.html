@@ -1,0 +1,16 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jessy Lin</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="/css/{{ stylesheet }}.css">
+    {% endfor %}
+    {% endif %}
+    <link rel="canonical" href="http://yourdomain.com/">
+</head>

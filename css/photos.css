@@ -1,0 +1,13 @@
+.gallery {
+    max-width: 500px;
+    margin: 0 auto;
+    list-style: none;
+}
+.gallery li{
+    margin: 10px 10px;
+    max-width: 150px;
+}
+img {
+    display: block;
+    max-width: 200px;
+}
